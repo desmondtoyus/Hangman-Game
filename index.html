@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HangMan Game :: Desmond </title>
+	<link rel="icon" type="image/png" href="assets/images/logo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Cabin|Fira+Sans+Extra+Condensed|Pacifico" rel="stylesheet">
+</head>
+<body>
+<audio id="winTune">
+  <source src="assets/audio/pass.mp4">
+ 
+</audio>
+<audio id="loseTune">
+  <source src="assets/audio/fail.mp4">
+ 
+ </audio>
+
+
+<audio id="gameOver">
+  <source src="assets/audio/gameOver.mp4">
+ </audio>
+	<nav class="navbar navbar-default ">
+	  <div class="container-fluid nav1">
+	    <div class="navbar-header">
+	    <img src="assets/images/hangman.png">
+	      <a class="navbar-brand " href="#">
+	        <img alt="Brand" src="assets/images/logo.png" width="100" height="130" alt="HangMan Game">
+	      </a>
+	    </div>
+	  </div>
+	</nav>
+	<div class="container ">
+		<div class="row ">
+			<div class="col-md-offset-2 col-md-8 col-md-offset-2 top container1">
+
+				<div class="row">
+						<div class="col-md-9">
+
+						<h3>Click Anywhere to Start Game</h3>
+						</div>
+						<div class="col-md-3 score col-sm-12 col-xs-12" >
+
+							 WINS:<div id="score"></div>
+						</div>
+						
+				</div>
+	
+
+			</div>
+			
+		</div>
+
+		<div class="row" >
+			<div class="col-md-offset-2 col-md-4 sides-left container1">
+				 <div id="text1"></div>
+				<div id="pic"><h3> You Win!!! </h3><img src="assets/images/win_clipart.gif"></div>
+				<div id="pic2"><h3> Im Sorry, you lost </h3><img src="assets/images/lose_clipart.gif"></div>
+				<div id="pic3"></div>
+				<div id="pic4"><h3> Game Over<h3>
+					
+				</div>
+				
+				</div>
+			<div class="col-md-4 sides-right container1 " >
+
+
+				<div class="row" id="myhide">
+					<div class="col-md-12">
+					<div id="answer">  </div>
+			
+					</div>
+					<div class="col-md-12 cont">
+						<div class="row">
+							<div class="col-md-6">
+								<label>Number of Keys Entered: </label><div id="counter"></div>
+							</div>
+							<div class="col-md-6">
+								<label> Current Key Pressed:</label><div id="keypressed"></div>
+							</div>
+
+
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label> Keys Already Used:</label><div id="rightkeyUsed"></div>
+							</div>
+							<div class="col-md-6">
+								<label> Wrong Keys Entered:</label><div id="wrongkeyUsed"></div>
+							</div>
+
+
+						</div>
+					</div>
+					
+					<div class="col-md-12">
+					<label> Wrong Attemps Possible: </label> <div id="countWrong"></div>
+								
+					</div>
+					<div class="col-md-12">
+					<label> Commet: </label> <div id="correct"></div>
+								
+					</div>
+									
+				</div>
+
+
+				
+			</div>
+		</div>
+	</div>
+	
+
+	
+	<footer>&copy;2017 Desmond Ademilyi</footer>
+
+</body>
+</html>
