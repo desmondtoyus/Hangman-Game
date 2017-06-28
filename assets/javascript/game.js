@@ -138,9 +138,10 @@ count++;
 		document.getElementById("wrongkeyUsed").innerHTML ="[ " +wrongkeys.join(" ")+" ]";
 		if(wCount <= 0)
 		{
+			document.getElementById('loseTune').play();
 			document.getElementById("correct").innerHTML ="You were wrong! It's " +randomWord;
 			document.getElementById("pic2").style.display = "block";
-			document.getElementById('loseTune').play();
+			
 			deleteArr();
 			reStart();
 			Myloses++;
@@ -155,12 +156,13 @@ count++;
 	
 	if (randomWord === myanswer)
 	{
+		document.getElementById('winTune').play();
 		score++;
 		document.getElementById("score").innerHTML = score;
 		document.getElementById("correct").innerHTML ="You got it! It's " +randomWord;
 		
 		document.getElementById("pic").style.display = "block";
-		document.getElementById('winTune').play();
+		
 		deleteArr();
 		reStart();
 
